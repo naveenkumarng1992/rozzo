@@ -5,16 +5,14 @@ workflows:
       flutter: stable
       xcode: latest
     scripts:
-      - name: Increment iOS build number and version
+      - name: Increment iOS build number
         script: |
           LATEST_BUILD_NUMBER=$(app-store-connect get-latest-testflight-build-number "com.mycompany.medmax" --platform IOS)
           if [ -z "$LATEST_BUILD_NUMBER" ]; then
             LATEST_BUILD_NUMBER=0
           fi
           NEW_BUILD_NUMBER=$((LATEST_BUILD_NUMBER + 1))
-          NEW_VERSION="1.1.$NEW_BUILD_NUMBER" # Version will be 1.1.4, 1.1.5, etc.
           echo "New build number: $NEW_BUILD_NUMBER"
-          echo "New version name: $NEW_VERSION"
-          flutter build ipa --release --build-name=$NEW_VERSION --build-number=$NEW_BUILD_NUMBER
+          flutter build ipa --release --build-name=1.1.3 --build-number=$NEW_BUILD_NUMBER
     artifacts:
       - build/ios/ipa/*.ipa
