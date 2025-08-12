@@ -1,5 +1,3 @@
-podfile to address the headers 
-
 $FirebaseAnalyticsWithoutAdIdSupport = true
 # Define global iOS platform
 platform :ios, '13.0'
