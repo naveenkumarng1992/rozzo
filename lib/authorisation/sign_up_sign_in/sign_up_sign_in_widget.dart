@@ -6,7 +6,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'dart:async';
-import '/custom_code/actions/index.dart' as actions;
 import '/index.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:easy_debounce/easy_debounce.dart';
@@ -810,10 +809,6 @@ class _SignUpSignInWidgetState extends State<SignUpSignInWidget>
                                                               'signinbutton',
                                                         },
                                                       );
-                                                      logFirebaseEvent(
-                                                          'Button_custom_action');
-                                                      await actions
-                                                          .getDeviceIDAndSave();
                                                       logFirebaseEvent(
                                                           'Button_backend_call');
                                                       _model.querytoupdatedeviceidinsupabase =
@@ -1700,10 +1695,6 @@ class _SignUpSignInWidgetState extends State<SignUpSignInWidget>
                                                               'signup_but_1',
                                                         },
                                                       );
-                                                      logFirebaseEvent(
-                                                          'Button_custom_action');
-                                                      await actions
-                                                          .getDeviceIDAndSave();
                                                       logFirebaseEvent(
                                                           'Button_update_app_state');
                                                       FFAppState()

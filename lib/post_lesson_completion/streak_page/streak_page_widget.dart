@@ -313,7 +313,7 @@ class _StreakPageWidgetState extends State<StreakPageWidget> {
                                         },
                                         text: 'I\'M COMMITTED',
                                         options: FFButtonOptions(
-                                          width: 280.0,
+                                          width: 250.0,
                                           height: 40.0,
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
@@ -357,7 +357,7 @@ class _StreakPageWidgetState extends State<StreakPageWidget> {
                                     },
                                   ),
                                 ),
-                              ],
+                              ].divide(SizedBox(width: 10.0)),
                             ),
                           ),
                         ),
@@ -366,18 +366,14 @@ class _StreakPageWidgetState extends State<StreakPageWidget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.0, 0.0),
-                  child: Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 200.0),
-                    child: Lottie.network(
-                      'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/med-max-ezfe7d/assets/enhwnj8bhxp1/pZEj3LEtIb.json',
-                      width: 500.0,
-                      height: 500.0,
-                      fit: BoxFit.contain,
-                      repeat: false,
-                      animate: true,
-                    ),
+                  alignment: AlignmentDirectional(0.0, -1.0),
+                  child: Lottie.network(
+                    'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/med-max-ezfe7d/assets/enhwnj8bhxp1/pZEj3LEtIb.json',
+                    width: 500.0,
+                    height: 500.0,
+                    fit: BoxFit.contain,
+                    repeat: false,
+                    animate: true,
                   ),
                 ),
               ],

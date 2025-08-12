@@ -310,6 +310,25 @@ class _UserCollegeListWidgetState extends State<UserCollegeListWidget>
                                 ),
                               },
                             );
+                          } else {
+                            logFirebaseEvent('Button_navigate_to');
+
+                            context.pushNamed(
+                              YearOfStudyWidget.routeName,
+                              queryParameters: {
+                                'countrychosen': serializeParam(
+                                  0,
+                                  ParamType.int,
+                                ),
+                              }.withoutNulls,
+                              extra: <String, dynamic>{
+                                kTransitionInfoKey: TransitionInfo(
+                                  hasTransition: true,
+                                  transitionType: PageTransitionType.fade,
+                                  duration: Duration(milliseconds: 0),
+                                ),
+                              },
+                            );
                           }
 
                           safeSetState(() {});
