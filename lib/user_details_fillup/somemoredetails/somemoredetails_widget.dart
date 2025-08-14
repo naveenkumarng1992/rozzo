@@ -153,7 +153,7 @@ class _SomemoredetailsWidgetState extends State<SomemoredetailsWidget>
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(8.0),
                               child: Image.asset(
-                                'assets/images/file_(4).png',
+                                'assets/images/802776b71db4507f26c221496299fb2c-removebg-preview.png',
                                 width: 118.0,
                                 height: 162.0,
                                 fit: BoxFit.cover,
